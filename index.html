@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Manhole App</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Manholes Collector App</h1>
+      <p>
+        Enter a street name and click "Add Street Name" to add it to the table.
+      </p>
+      <div class="app">
+        <table id="streets-table">
+          <thead>
+            <tr>
+              <th>Street Name</th>
+              <th>Number of Rain Manholes</th>
+              <th>Number of Sewer Manholes</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <!-- start of edit tool -->
+        <div class="edit-tools">
+          <!-- adding street name -->
+          <div class="input-st">
+            <label for="street-name-input">Enter Street Name:</label>
+            <input type="text" id="street-name-input" />
+            <button id="add-street-btn">Add Street Name</button>
+          </div>
+          <!-- adding manholes btns -->
+          <div class="edit-btns">
+            <button id="add-rain-btn">Add Rain Manhole</button>
+            <button id="remove-rain-btn">Remove Rain Manhole</button>
+            <button id="add-sewer-btn">Add Sewer Manhole</button>
+            <button id="remove-sewer-btn">Remove Sewer Manhole</button>
+          </div>
+          <!-- exporting btn -->
+          <div class="exportbtn">
+            <button id="export-pdf-btn">Export Table as PDF</button>
+            <button id="export-xlsx-btn">Export Table as Excell</button>
+          </div>
+        </div>
+        <!-- End of edit tools -->
+      </div>
+    </div>
+    <!-- jspdf -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <!-- JS to Excell -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.8/xlsx.full.min.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
