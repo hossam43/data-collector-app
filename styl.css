@@ -87,7 +87,6 @@ input:focus {
 
 button {
   font-size: 16px;
-  font-weight: 600;
   padding: 1em;
   margin-right: 10px;
   background-color: var(--clr-primary);
@@ -118,27 +117,5 @@ button {
   .input-st {
     flex-direction: column;
     width: 100%;
-  }
-  .input-st #street-name-input {
-    width: 100%;
-    height: 3em;
-    margin: 1em 0;
-    font-size: 1em;
-  }
-  .input-st :nth-child(3) {
-    width: 100%;
-  }
-  .edit-btns {
-    flex-direction: column;
-    width: 80%;
-    margin: 1em 0;
-  }
-  .edit-btn {
-    width: 100%;
-    margin: 0.5em 0;
-  }
-
-  td input {
-    height: 2em;
   }
 }
