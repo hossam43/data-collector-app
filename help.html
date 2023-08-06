@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>help</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        text-align: center;
+      }
+      .help-container {
+        margin: 1em 0.5em;
+      }
+
+      img {
+        max-width: 70%;
+        max-height: 70%;
+      }
+      .guide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .step {
+        border: white solid 1px;
+        width: 80%;
+        margin-bottom: 2em;
+        padding: 0.25em;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .step-title {
+        text-align: left;
+        margin: 0;
+        max-width: fit-content;
+        padding: 0.5em;
+
+        border-radius: 0.5em;
+        background-color: #ffb033;
+      }
+      a {
+        text-decoration: none;
+        padding: 1em 2em;
+        margin-bottom: 1em;
+        outline: none;
+        border: none;
+        background-color: #ffb033;
+        color: black;
+        border-radius: 1em;
+      }
+      a:hover {
+        background-color: black;
+        color: #ffb033;
+        cursor: pointer;
+      }
+
+      @media screen and (min-width: 1250px) {
+        .help-container {
+          max-width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="help-container">
+      <img src="./Images/iconlogo.png" alt="Welcome Image" />
+      <h4>Welcome to help page of the Manhole collector App</h4>
+      <p>
+        "Welcome to the Manhole Collector Application guide! Our application is
+        ingeniously designed for efficient data collection, focusing on both
+        sewer and rain manholes. However, its functionality can easily be
+        implemented for various types of manholes. In just four simple steps,
+        we'll walk you through how to use this powerful tool and harness its
+        potential for seamless data collection."
+      </p>
+    </div>
+
+    <div class="guide">
+      <div class="step">
+        <h5 class="step-title">Step 1</h5>
+        <div><img src="./Images/first-step.jpg" alt="" /></div>
+        <p>Simple Enter a Street name in the input field</p>
+      </div>
+
+      <div class="step">
+        <h5 class="step-title">Step 2</h5>
+        <div><img src="./Images/secont-step.jpg" alt="" /></div>
+        <p>Click anywhere on the generated row to activate it</p>
+      </div>
+
+      <div class="step">
+        <h5 class="step-title">Step 3</h5>
+        <div><img src="./Images/thirdwithoutshadow.jpg" alt="" /></div>
+        <p>Adding or Removing</p>
+      </div>
+
+      <div class="step">
+        <h5 class="step-title">Step 4</h5>
+        <div><img src="./Images/fourth-step.jpg" alt="" /></div>
+        <p>Export your table with different formats</p>
+      </div>
+
+      <div class="step">
+        <h5 class="step-title">Step 5</h5>
+        <div><img src="./Images/fifth-step.jpg" alt="" /></div>
+        <p>View the Final Results</p>
+      </div>
+    </div>
+
+    <a href="https://hossam43.github.io/data-collector-app/" target="_blank"
+      >Back To the App</a
+    >
+  </body>
+</html>

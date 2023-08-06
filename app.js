@@ -8,6 +8,7 @@ const removeSewerBtn = document.getElementById("remove-sewer-btn");
 const exportPdfBtn = document.getElementById("export-pdf-btn");
 // Get a reference to the export button
 const exportBtn = document.getElementById("export-xlsx-btn");
+const exportServer = document.getElementById("export-server");
 window.jsPDF = window.jspdf.jsPDF;
 
 let selectedRow = null;
