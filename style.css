@@ -164,4 +164,9 @@ button {
     border: 1px solid var(--clr-dark);
     font-size: 0.75em;
   }
+
+  /* to hide the help button */
+  .on-mobile {
+    display: none;
+  }
 }
