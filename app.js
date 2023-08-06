@@ -22,11 +22,6 @@ function addStreet() {
   newRow.insertCell(0).innerHTML = streetName;
   newRow.insertCell(1).innerHTML = 0;
   newRow.insertCell(2).innerHTML = 0;
-  const notesCell = newRow.insertCell(3);
-  const notesInput = document.createElement("input");
-  notesInput.type = "text";
-  notesInput.placeholder = "Add notes...";
-  notesCell.appendChild(notesInput);
   newRow.addEventListener("click", selectRow);
   streetNameInput.value = "";
 }

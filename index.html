@@ -9,16 +9,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
       rel="stylesheet"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Manholes Collector App</h1>
-      <p>
-        Enter a street name and click "Add Street Name" to add it to the table.
-      </p>
+      <h1>Manholes Collector</h1>
       <div class="app">
         <table id="streets-table">
           <thead>
@@ -26,7 +23,6 @@
               <th>Street Name</th>
               <th>Number of Rain Manholes</th>
               <th>Number of Sewer Manholes</th>
-              <th>Notes</th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -35,8 +31,11 @@
         <div class="edit-tools">
           <!-- adding street name -->
           <div class="input-st">
-            <label for="street-name-input">Enter Street Name:</label>
-            <input type="text" id="street-name-input" />
+            <input
+              placeholder="Enter Street name"
+              type="text"
+              id="street-name-input"
+            />
             <button id="add-street-btn">Add Street Name</button>
           </div>
           <!-- adding manholes btns -->
