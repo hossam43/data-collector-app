@@ -9,6 +9,7 @@ const exportPdfBtn = document.getElementById("export-pdf-btn");
 // Get a reference to the export button
 const exportBtn = document.getElementById("export-xlsx-btn");
 const exportServer = document.getElementById("export-server");
+const helpBtn = document.getElementById("help");
 window.jsPDF = window.jspdf.jsPDF;
 
 let selectedRow = null;
@@ -105,39 +106,43 @@ exportPdfBtn.addEventListener("click", () => {
 });
 
 // Add an event listener to the export button
-exportBtn.addEventListener("click", () => {
-  // Get the table HTML element
-  const table = document.getElementById("streets-table");
+// exportBtn.addEventListener("click", () => {
+//   // Get the table HTML element
+//   const table = document.getElementById("streets-table");
 
-  // Convert the table to a workbook
-  const workbook = XLSX.utils.table_to_book(table);
+//   // Convert the table to a workbook
+//   const workbook = XLSX.utils.table_to_book(table);
 
-  // Generate a binary string from the workbook
-  const binaryString = XLSX.write(workbook, {
-    bookType: "xlsx",
-    type: "binary",
-  });
+//   // Generate a binary string from the workbook
+//   const binaryString = XLSX.write(workbook, {
+//     bookType: "xlsx",
+//     type: "binary",
+//   });
 
-  // Convert the binary string to a Blob
-  const blob = new Blob([s2ab(binaryString)], {
-    type: "application/octet-stream",
-  });
+//   // Convert the binary string to a Blob
+//   const blob = new Blob([s2ab(binaryString)], {
+//     type: "application/octet-stream",
+//   });
 
-  // Create a download link for the Excel file
-  const link = document.createElement("a");
-  link.href = window.URL.createObjectURL(blob);
-  link.download = "table.xlsx";
+//   // Create a download link for the Excel file
+//   const link = document.createElement("a");
+//   link.href = window.URL.createObjectURL(blob);
+//   link.download = "table.xlsx";
 
-  // Append the download link to the document body
-  document.body.appendChild(link);
+//   // Append the download link to the document body
+//   document.body.appendChild(link);
 
-  // Click the download link to download the file
-  link.click();
+//   // Click the download link to download the file
+//   link.click();
 
-  // Remove the download link from the document body
-  document.body.removeChild(link);
+//   // Remove the download link from the document body
+//   document.body.removeChild(link);
+// });
+
+// Help btn
+helpBtn.addEventListener("click", () => {
+  window.location.href = "https://hossam43.github.io/data-collector-app/help";
 });
-
 // Utility function to convert a string to an ArrayBuffer
 function s2ab(s) {
   const buf = new ArrayBuffer(s.length);
